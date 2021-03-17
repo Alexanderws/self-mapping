@@ -1,0 +1,2041 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "OsloSans", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sr-only {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.t-italic {
+  font-style: italic;
+  padding-right: 2px;
+}
+
+.t-lowercase {
+  text-transform: lowercase;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto 40px auto;
+  width: 100%;
+}
+
+.button-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &.button-row--centered {
+    justify-content: center;
+  }
+}
+
+.vv-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.vv-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/***** --- Oslo kommune --- *****/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2a2859;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.io-btn,
+a,
+li,
+p,
+td,
+th {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .io-btn,
+  a,
+  li,
+  p,
+  td,
+  th {
+    font-size: 1.125rem;
+  }
+}
+
+p,
+ul {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+/* Heading sizes */
+.osg-content blockquote:before,
+.osg-content h1,
+.osg-u-heading-1 {
+  font-size: 1.75rem !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.9px !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .osg-content blockquote:before,
+  .osg-content h1,
+  .osg-u-heading-1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .osg-content blockquote:before,
+  .osg-content h1,
+  .osg-u-heading-1 {
+    font-size: 3.375rem !important;
+  }
+}
+
+.autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .osg-content
+  .link,
+.autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .osg-content
+  .link,
+.autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .osg-content
+  .link,
+.autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  article
+  figure
+  .header
+  .osg-content
+  .link,
+.autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .osg-content
+  .link,
+.autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .osg-content
+  .link,
+.autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .osg-content
+  .link,
+.autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  article
+  figure
+  .header
+  .osg-content
+  .link,
+.magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .osg-content
+  .link,
+.magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .osg-content
+  .link,
+.magazine-article .wrapper .article-priority .header .osg-content a,
+.magazine-article
+  .wrapper
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .osg-content
+  .link,
+.magazine-article
+  .wrapper
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .osg-content
+  .link,
+.magazine-article .wrapper figure .header .osg-content a,
+.magazine-article
+  article
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .osg-content
+  .link,
+.magazine-article
+  article
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .osg-content
+  .link,
+.magazine-article article .article-priority .header .osg-content a,
+.magazine-article
+  article
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .osg-content
+  .link,
+.magazine-article
+  article
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .osg-content
+  .link,
+.magazine-article article figure .header .osg-content a,
+.osg-content
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .link,
+.osg-content
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .link,
+.osg-content
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .link,
+.osg-content
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  article
+  figure
+  .header
+  .link,
+.osg-content
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .link,
+.osg-content
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .link,
+.osg-content
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .link,
+.osg-content
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  article
+  figure
+  .header
+  .link,
+.osg-content
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .link,
+.osg-content
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .link,
+.osg-content .magazine-article .wrapper .article-priority .header a,
+.osg-content
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .link,
+.osg-content
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .link,
+.osg-content .magazine-article .wrapper figure .header a,
+.osg-content
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .link,
+.osg-content
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .link,
+.osg-content .magazine-article article .article-priority .header a,
+.osg-content
+  .magazine-article
+  article
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .link,
+.osg-content
+  .magazine-article
+  article
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .link,
+.osg-content .magazine-article article figure .header a,
+.osg-content h2,
+.osg-u-heading-2 {
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.3px !important;
+  max-width: 100% !important; // to avoid text overflow in IE 11
+}
+
+@media print, screen and (min-width: 769px) {
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .osg-content
+    .link,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .osg-content
+    .link,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .osg-content
+    .link,
+  .magazine-article .wrapper .article-priority .header .osg-content a,
+  .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .osg-content
+    .link,
+  .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .osg-content
+    .link,
+  .magazine-article .wrapper figure .header .osg-content a,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .osg-content
+    .link,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .osg-content
+    .link,
+  .magazine-article article .article-priority .header .osg-content a,
+  .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .osg-content
+    .link,
+  .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .osg-content
+    .link,
+  .magazine-article article figure .header .osg-content a,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .link,
+  .osg-content
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  .osg-content
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  .osg-content .magazine-article .wrapper .article-priority .header a,
+  .osg-content
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  .osg-content
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  .osg-content .magazine-article .wrapper figure .header a,
+  .osg-content
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  .osg-content
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  .osg-content .magazine-article article .article-priority .header a,
+  .osg-content
+    .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  .osg-content
+    .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  .osg-content .magazine-article article figure .header a,
+  .osg-content h2,
+  .osg-u-heading-2 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .osg-content
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .osg-content
+    .link,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .osg-content
+    .link,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .osg-content
+    .link,
+  .magazine-article .wrapper .article-priority .header .osg-content a,
+  .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .osg-content
+    .link,
+  .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .osg-content
+    .link,
+  .magazine-article .wrapper figure .header .osg-content a,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .osg-content
+    .link,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .osg-content
+    .link,
+  .magazine-article article .article-priority .header .osg-content a,
+  .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .osg-content
+    .link,
+  .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .osg-content
+    .link,
+  .magazine-article article figure .header .osg-content a,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .link,
+  .osg-content
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .link,
+  .osg-content
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  .osg-content
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  .osg-content .magazine-article .wrapper .article-priority .header a,
+  .osg-content
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  .osg-content
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  .osg-content .magazine-article .wrapper figure .header a,
+  .osg-content
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  .osg-content
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  .osg-content .magazine-article article .article-priority .header a,
+  .osg-content
+    .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  .osg-content
+    .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  .osg-content .magazine-article article figure .header a,
+  .osg-content h2,
+  .osg-u-heading-2 {
+    font-size: 2.25rem !important;
+  }
+}
+
+.osg-content h3,
+.osg-u-heading-3 {
+  font-size: 1.375rem !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.3px !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .osg-content h3,
+  .osg-u-heading-3 {
+    font-size: 1.625rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .osg-content h3,
+  .osg-u-heading-3 {
+    font-size: 1.875rem !important;
+  }
+}
+
+.osg-content h4,
+.osg-u-heading-4 {
+  font-size: 1.125rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.3px !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .osg-content h4,
+  .osg-u-heading-4 {
+    font-size: 1.375rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .osg-content h4,
+  .osg-u-heading-4 {
+    font-size: 1.5rem !important;
+  }
+}
+
+#filteredArticles .article-data .article-header,
+#kindergarten-calculator
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .link,
+#kindergarten-calculator
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .link,
+#kindergarten-calculator
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .link,
+#kindergarten-calculator
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  article
+  figure
+  .header
+  .link,
+#kindergarten-calculator
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .link,
+#kindergarten-calculator
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .link,
+#kindergarten-calculator
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .link,
+#kindergarten-calculator
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  article
+  figure
+  .header
+  .link,
+#kindergarten-calculator
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .link,
+#kindergarten-calculator
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .link,
+#kindergarten-calculator
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  a,
+#kindergarten-calculator
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .link,
+#kindergarten-calculator
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .link,
+#kindergarten-calculator .magazine-article .wrapper figure .header a,
+#kindergarten-calculator
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .link,
+#kindergarten-calculator
+  .magazine-article
+  article
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .link,
+#kindergarten-calculator
+  .magazine-article
+  article
+  .article-priority
+  .header
+  a,
+#kindergarten-calculator
+  .magazine-article
+  article
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .link,
+#kindergarten-calculator
+  .magazine-article
+  article
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  .link,
+#kindergarten-calculator .magazine-article article figure .header a,
+#kindergarten-calculator h2,
+.autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  #kindergarten-calculator
+  .link,
+.autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  #kindergarten-calculator
+  .link,
+.autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  article
+  .article-priority
+  .header
+  #kindergarten-calculator
+  .link,
+.autocomplete-suggestions
+  .autocomplete-no-suggestion
+  .magazine-article
+  article
+  figure
+  .header
+  #kindergarten-calculator
+  .link,
+.autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  .wrapper
+  .article-priority
+  .header
+  #kindergarten-calculator
+  .link,
+.autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  .wrapper
+  figure
+  .header
+  #kindergarten-calculator
+  .link,
+.autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  article
+  .article-priority
+  .header
+  #kindergarten-calculator
+  .link,
+.autocomplete-suggestions
+  .autocomplete-suggestion
+  .magazine-article
+  article
+  figure
+  .header
+  #kindergarten-calculator
+  .link,
+.magazine-article
+  .wrapper
+  .article-priority
+  .header
+  #kindergarten-calculator
+  a,
+.magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  #kindergarten-calculator
+  .link,
+.magazine-article
+  .wrapper
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  #kindergarten-calculator
+  .link,
+.magazine-article .wrapper figure .header #kindergarten-calculator a,
+.magazine-article
+  .wrapper
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  #kindergarten-calculator
+  .link,
+.magazine-article
+  .wrapper
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  #kindergarten-calculator
+  .link,
+.magazine-article
+  article
+  .article-priority
+  .header
+  #kindergarten-calculator
+  a,
+.magazine-article
+  article
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  #kindergarten-calculator
+  .link,
+.magazine-article
+  article
+  .article-priority
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  #kindergarten-calculator
+  .link,
+.magazine-article article figure .header #kindergarten-calculator a,
+.magazine-article
+  article
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-no-suggestion
+  #kindergarten-calculator
+  .link,
+.magazine-article
+  article
+  figure
+  .header
+  .autocomplete-suggestions
+  .autocomplete-suggestion
+  #kindergarten-calculator
+  .link,
+.osg-content h5,
+.osg-u-heading-5 {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.3px !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  #filteredArticles .article-data .article-header,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    a,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  #kindergarten-calculator .magazine-article .wrapper figure .header a,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    .article-priority
+    .header
+    a,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  #kindergarten-calculator .magazine-article article figure .header a,
+  #kindergarten-calculator h2,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    #kindergarten-calculator
+    a,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article .wrapper figure .header #kindergarten-calculator a,
+  .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    #kindergarten-calculator
+    a,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article article figure .header #kindergarten-calculator a,
+  .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    #kindergarten-calculator
+    .link,
+  .osg-content h5,
+  .osg-u-heading-5 {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  #filteredArticles .article-data .article-header,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .link,
+  #kindergarten-calculator
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    a,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  #kindergarten-calculator .magazine-article .wrapper figure .header a,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    .article-priority
+    .header
+    a,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .link,
+  #kindergarten-calculator
+    .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    .link,
+  #kindergarten-calculator .magazine-article article figure .header a,
+  #kindergarten-calculator h2,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    .wrapper
+    figure
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    .article-priority
+    .header
+    #kindergarten-calculator
+    .link,
+  .autocomplete-suggestions
+    .autocomplete-suggestion
+    .magazine-article
+    article
+    figure
+    .header
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    #kindergarten-calculator
+    a,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    .wrapper
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article .wrapper figure .header #kindergarten-calculator a,
+  .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    .wrapper
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    #kindergarten-calculator
+    a,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    article
+    .article-priority
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article article figure .header #kindergarten-calculator a,
+  .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-no-suggestion
+    #kindergarten-calculator
+    .link,
+  .magazine-article
+    article
+    figure
+    .header
+    .autocomplete-suggestions
+    .autocomplete-suggestion
+    #kindergarten-calculator
+    .link,
+  .osg-content h5,
+  .osg-u-heading-5 {
+    font-size: 1.125rem !important;
+  }
+}
+
+/* Text sizes */
+.io-tile-longdocument .digest,
+.io-tile-longdocument .digest p,
+.io-tile-title .digest,
+.io-tile-title .digest p,
+.osg-content blockquote,
+.osg-content blockquote p,
+.osg-u-text-1,
+article .digest,
+article .digest p {
+  font-size: 1.25rem !important;
+  line-height: 1.5em !important;
+  font-weight: 300 !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .io-tile-longdocument .digest,
+  .io-tile-longdocument .digest p,
+  .io-tile-title .digest,
+  .io-tile-title .digest p,
+  .osg-content blockquote,
+  .osg-content blockquote p,
+  .osg-u-text-1,
+  article .digest,
+  article .digest p {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .io-tile-longdocument .digest,
+  .io-tile-longdocument .digest p,
+  .io-tile-title .digest,
+  .io-tile-title .digest p,
+  .osg-content blockquote,
+  .osg-content blockquote p,
+  .osg-u-text-1,
+  article .digest,
+  article .digest p {
+    font-size: 1.875rem !important;
+  }
+}
+
+.osg-u-text-2 {
+  font-size: 1.25rem !important;
+  line-height: 1.5em !important;
+  font-weight: 300 !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .osg-u-text-2 {
+    font-size: 1.375rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .osg-u-text-2 {
+    font-size: 1.5rem !important;
+  }
+}
+
+.osg-content blockquote > cite,
+.osg-content blockquote footer,
+.osg-u-text-3 {
+  font-size: 1.125rem !important;
+  line-height: 1.5em !important;
+  font-weight: 300 !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .osg-content blockquote > cite,
+  .osg-content blockquote footer,
+  .osg-u-text-3 {
+    font-size: 1.125rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .osg-content blockquote > cite,
+  .osg-content blockquote footer,
+  .osg-u-text-3 {
+    font-size: 1.25rem !important;
+  }
+}
+
+.osg-u-text-4 {
+  font-size: 1rem !important;
+  line-height: 1.5em !important;
+  font-weight: 500 !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .osg-u-text-4 {
+    font-size: 1.125rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .osg-u-text-4 {
+    font-size: 1.125rem !important;
+  }
+}
+
+.osg-content ol li,
+.osg-content p,
+.osg-content ul li,
+.osg-u-text-5 {
+  font-size: 1rem !important;
+  line-height: 1.5em !important;
+  font-weight: 300 !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .osg-content ol li,
+  .osg-content p,
+  .osg-content ul li,
+  .osg-u-text-5 {
+    font-size: 1.125rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .osg-content ol li,
+  .osg-content p,
+  .osg-content ul li,
+  .osg-u-text-5 {
+    font-size: 1.125rem !important;
+  }
+}
+
+.osg-u-text-6 {
+  font-size: 0.875rem !important;
+  line-height: 1.5em !important;
+  font-weight: 500 !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .osg-u-text-6 {
+    font-size: 0.875rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .osg-u-text-6 {
+    font-size: 0.875rem !important;
+  }
+}
+
+.osg-u-text-7 {
+  font-size: 0.875rem !important;
+  line-height: 1.5em !important;
+  font-weight: 300 !important;
+}
+
+@media print, screen and (min-width: 769px) {
+  .osg-u-text-7 {
+    font-size: 0.875rem !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .osg-u-text-7 {
+    font-size: 0.875rem !important;
+  }
+}

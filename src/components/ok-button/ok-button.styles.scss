@@ -1,0 +1,52 @@
+@use 'src/constants/colors.styles.scss' as color;
+
+button {
+  border: none;
+  font-size: 1.125rem;
+  line-height: 27px;
+  font-weight: 500;
+  padding: 13px 16px;
+  text-align: left;
+
+  &.vv-button-primary {
+    background-color: color.$ok-blue-dark;
+    color: color.$white;
+  }
+
+  &.vv-button-alternative {
+    background-color: color.$ok-yellow;
+    color: color.$ok-blue-dark;
+  }
+
+  &.vv-button-tertiary {
+    background-color: color.$ok-blue-bright;
+    color: color.$ok-blue-dark;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: color.$ok-blue-web;
+    color: color.$white;
+
+    .vv-polygon {
+      stroke: color.$white;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: color.$ok-grey-web;
+    color: color.$ok-grey-disabled;
+  }
+
+  &.vv-button-secondary {
+    background-color: transparent;
+    border: 2px solid color.$ok-blue-dark;
+    color: color.$ok-blue-dark;
+
+    &:hover {
+      border: 2px solid color.$ok-blue-web;
+      color: color.$ok-blue-web;
+    }
+  }
+}
