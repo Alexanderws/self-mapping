@@ -9,7 +9,7 @@ const ResultPage: React.FC<RouteComponentProps> = ({ history }) => {
   return (
     <div>
       <Breadcrumbs />
-      <h1 className="osg-u-heading-1">Ferdig</h1>
+      <h1 className="osg-u-heading-2">Ferdig</h1>
       <p>
         Du har svart på samtlige 20 påstander. Basert på svarene dine
         anbefaler vi at du ser gjennom hvilke forebyggende tilbud som

@@ -6,7 +6,7 @@ import Chevron from "../../assets/chevron.icon";
 
 const StartPage: React.FC<RouteComponentProps> = ({ history }) => {
   return (
-    <div>
+    <div style={{ marginTop: "16px" }}>
       <h1 className="osg-u-heading-1">
         Kontaktpunkt for helse- og omsorgstjenester
       </h1>
