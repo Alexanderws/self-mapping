@@ -7,7 +7,7 @@ interface IconProps {
 }
 
 const OsloLogo: React.FC<IconProps> = (props) => {
-  const { fillColor, strokeColor, size } = props;
+  const { size } = props;
 
   return (
     <svg
