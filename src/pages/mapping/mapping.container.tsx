@@ -73,7 +73,11 @@ const MappingPage: React.FC<RouteComponentProps> = ({ history }) => {
             backgroundColor: "#E5E5E5",
           }}
         />
-        <OkButton style={{ marginBottom: "8px" }} type="tertiary">
+        <OkButton
+          onClick={handleNextClick}
+          style={{ marginBottom: "8px" }}
+          type="tertiary"
+        >
           Hopp over dette spørsmålet
         </OkButton>
       </div>
