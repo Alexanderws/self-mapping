@@ -1,6 +1,9 @@
 import React from "react";
 import { RouteComponentProps } from "react-router-dom";
 
+import OkButton from "../../components/ok-button/ok-button.component";
+import Chevron from "../../assets/chevron.icon";
+
 const StartPage: React.FC<RouteComponentProps> = ({ history }) => {
   return (
     <div>
@@ -11,11 +14,26 @@ const StartPage: React.FC<RouteComponentProps> = ({ history }) => {
         For at vi skal forstå din situasjon best mulig og komme i kontakt
         med deg raskt, må vi vite litt mer om tilstanden din akkurat nå.
       </p>
-      <p>
+      <p style={{ marginBottom: "32px" }}>
         Du må svare på noen spørsmål. For å kunne sende inn henvendelsen
         din når du er ferdig må du logge inn med ID-porten.
       </p>
-      <button onClick={() => history.push("mapping")}>START</button>
+      <OkButton
+        style={{ width: "100%" }}
+        type="tertiary"
+        onClick={() => history.push("mapping")}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <span style={{ marginRight: "16px" }}>Start her</span>
+          <Chevron />
+        </div>
+      </OkButton>
     </div>
   );
 };

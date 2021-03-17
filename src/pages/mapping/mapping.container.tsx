@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
 
 import VARIABLES from "../../function-variables";
 
+import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs.component";
 import OkButton from "../../components/ok-button/ok-button.component";
 
 const ALTERNATIVE_ANSWERS: string[] = [
@@ -36,8 +37,13 @@ const MappingPage: React.FC<RouteComponentProps> = ({ history }) => {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [mappingIndex]);
+
   return (
-    <div style={{ paddingTop: "32px" }}>
+    <div>
+      <Breadcrumbs />
       <div style={{ marginBottom: "16px" }}>
         <span style={{ fontWeight: 600 }}>{mappingIndex + 1}</span> av{" "}
         {VARIABLES.length}

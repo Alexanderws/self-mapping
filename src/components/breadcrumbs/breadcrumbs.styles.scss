@@ -1,0 +1,10 @@
+@use 'src/constants/colors.styles.scss' as color;
+
+a.vv-breadcrumbs {
+  color: color.$ok-blue-dark;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

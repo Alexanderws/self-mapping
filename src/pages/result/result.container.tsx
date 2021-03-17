@@ -3,10 +3,12 @@ import { RouteComponentProps } from "react-router-dom";
 
 import OkButton from "../../components/ok-button/ok-button.component";
 import Chevron from "../../assets/chevron.icon";
+import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs.component";
 
 const ResultPage: React.FC<RouteComponentProps> = ({ history }) => {
   return (
     <div>
+      <Breadcrumbs />
       <h1 className="osg-u-heading-1">Ferdig</h1>
       <p>
         Du har svart på samtlige 20 påstander. Basert på svarene dine
