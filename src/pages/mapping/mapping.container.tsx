@@ -4,25 +4,12 @@ import { RouteComponentProps } from "react-router-dom";
 import VARIABLES from "../../function-variables";
 
 import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs.component";
-import OkButton from "../../components/ok-button/ok-button.component";
 import VariablesPage from "./variables.component";
 import CommentPage from "./comment.component";
-
-const ALTERNATIVE_ANSWERS: string[] = [
-  "Helt enig",
-  "Litt enig",
-  "Hverken enig eller uenig",
-  "Litt uenig",
-  "Helt uenig",
-];
 
 const MappingPage: React.FC<RouteComponentProps> = ({ history }) => {
   const [mappingIndex, setMappingIndex] = useState(0);
   const [isShowingComment, setIsShowingComment] = useState(false);
-
-  const currentVariable = VARIABLES[mappingIndex]
-    ? VARIABLES[mappingIndex]
-    : { name: "ukjent", description: "ukjent" };
 
   const handleNextClick = () => {
     if (mappingIndex < VARIABLES.length - 1) {

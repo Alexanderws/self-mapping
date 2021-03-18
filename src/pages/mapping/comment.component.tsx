@@ -1,7 +1,5 @@
 import React from "react";
 
-import VARIABLES from "../../function-variables";
-
 import OkButton from "../../components/ok-button/ok-button.component";
 
 const CommentPage: React.FC<{
