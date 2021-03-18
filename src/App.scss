@@ -1,3 +1,5 @@
+@use 'src/constants/colors.styles.scss' as color;
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +17,13 @@ body {
 
 a {
   text-decoration: none;
+}
+
+textarea {
+  border: 1px solid black;
+  border-radius: 0;
+  font-size: 1.125rem;
+  padding: 4px;
 }
 
 .sr-only {
@@ -75,7 +84,8 @@ h6 {
   padding-bottom: 5px;
 }
 
-p {
+p,
+label {
   font-size: 1rem;
   line-height: 1.5em;
   font-weight: 300;
@@ -97,6 +107,7 @@ th {
   a,
   li,
   p,
+  label,
   td,
   th {
     font-size: 1.125rem;
